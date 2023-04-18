@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>maddyworks</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/eb04ca6b7f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+         <div id="header">
+            <div class="container">
+                <nav>
+                    <img src ="images/LOGO1.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>College Student</p>
+                    <h1>Hi,<br>I'm<span> Matheshwaran Prakash </span><br> from India</h1>
+                </div>
+            </div>
+         </div>
+<!-----------about---------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm Matheswaran Prakash, and I'm an Indian from Chennai, Tamil Nadu.
+                            As a college student, I have spent the last two years working on a variety of projects.
+                            I'm now working towards a bachelor's degree in Data Science and Artificial Intelligence.
+                            This experience was acquired by taking part in several contests and hackathons held in Tamil Nadu.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('projects done')">Projects done</p>
+                            <p class="tab-links " onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Web Designer</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>IOT</span><br>IOT projects </li>
+                                <li><span>ML</span><br>Machine Learning projects </li>
+                                <li><span>AI</span><br>Artificial Intelligence projects </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects done">
+                            <ul>
+                                <li><span>AI projects</span><br>Voice assistant </li>
+                                <li><span>IOT Projects</span><br>Smart Wheelchair</li>
+                                <li><span>ML Projects</span><br>medical diagnosis projects</li>
+                                <li><span>Cyber Security</span><br>Captcha Generation </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-</span><br>completed my Senior Secondary with 95%</li>
+                                <li><span>current</span><br>B.Tech Artificial Intelligence and Data Science degree</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!------------services------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h2>Windows Voice Assistant</h2>
+                <P>This voice assistant for windows is used to access all apps in the computer through voice commands.
+                    It also includes speech to text conversion, play music,take pictues and access websites through voice inputs.  
+                </P>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-nurse"></i>
+                <h2>Health Prediction System</h2>
+                <P>It aims to minimise the requirement of doctors for minor health problems.
+                    The user should mention the symptoms to know the probable disease they are suffering from.
+                </P>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-wheelchair"></i>
+                <h2>Smart Wheelchair</h2>
+                <P>It is a team project.
+                    This project extends the functionality of the wheelchair, the way it is used, and the advanced technology associated with it.
+                    Disabled and elderly individuals, mostly use a wheelchair to move from one place to another. 
+                </P>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-shield"></i>
+                <h2>CAPTCHA Generation</h2>
+                <P>It is a team project.
+                    A CAPTCHA system written in TypeScript that utilizes dithering techniques. 
+                    Designed to be easier for humans while remaining difficult for bots.
+                </P>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>matheshwaranixb@gmail.com</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100069190314475&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/Maddy73333229?t=kLFRjxyEDJqMoe33Axpl6Q&s=08"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/matheshwaran-prakash-4a90a622b/?originalSubdomain=in"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+</body>
+</html>
